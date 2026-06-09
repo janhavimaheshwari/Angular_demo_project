@@ -1,0 +1,17 @@
+<header class="navbar">
+  <div class="navbar-start">
+    <span class="navbar-title">Executive Business Dashboard</span>
+  </div>
+  <div class="navbar-actions">
+    <button type="button" class="icon-button" (click)="themeService.toggleTheme()">
+      <i [class]="themeService.isDarkMode$() ? 'pi pi-sun' : 'pi pi-moon'"></i>
+    </button>
+    <div class="profile-chip">
+      <span class="profile-avatar">L</span>
+      <div>
+        <div class="profile-name">Lara Kingsley</div>
+        <div class="profile-role">Chief Strategy Officer</div>
+      </div>
+    </div>
+  </div>
+</header>

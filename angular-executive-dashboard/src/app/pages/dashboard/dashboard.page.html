@@ -1,0 +1,54 @@
+<div class="dashboard-shell" *ngIf="!dashboardService.isLoading$()">
+  <!-- KPI Cards Row -->
+  <div class="kpi-grid">
+    <app-kpi-card
+      title="Revenue"
+      [value]="dashboardService.kpis$().revenue"
+      [growth]="dashboardService.getGrowthMetric('revenue')"
+      icon="pi pi-dollar"
+      color="primary">
+    </app-kpi-card>
+    <app-kpi-card
+      title="Profit"
+      [value]="dashboardService.kpis$().profit"
+      [growth]="dashboardService.getGrowthMetric('profit')"
+      icon="pi pi-chart-line"
+      color="accent">
+    </app-kpi-card>
+    <app-kpi-card
+      title="Orders"
+      [value]="dashboardService.kpis$().orders"
+      [growth]="dashboardService.getGrowthMetric('orders')"
+      icon="pi pi-shopping-cart"
+      color="warn">
+    </app-kpi-card>
+    <app-kpi-card
+      title="Customers"
+      [value]="dashboardService.kpis$().customers"
+      [growth]="dashboardService.getGrowthMetric('customers')"
+      icon="pi pi-users"
+      color="success">
+    </app-kpi-card>
+  </div>
+
+  <!-- Charts Row -->
+  <div class="charts-grid">
+    <app-revenue-chart [data]="dashboardService.monthlySales$"></app-revenue-chart>
+    <app-category-chart [data]="dashboardService.categories$"></app-category-chart>
+  </div>
+
+  <!-- Tables Row -->
+  <div class="tables-grid">
+    <app-products-table [data]="dashboardService.topProducts$"></app-products-table>
+  </div>
+
+  <div class="tables-grid">
+    <app-transactions-table [data]="dashboardService.transactions$"></app-transactions-table>
+  </div>
+</div>
+
+<!-- Loading State -->
+<div *ngIf="dashboardService.isLoading$()" class="loading-shell">
+  <div class="loader"></div>
+  <p>Loading dashboard data...</p>
+</div>

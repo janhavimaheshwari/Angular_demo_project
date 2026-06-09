@@ -1,0 +1,13 @@
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <div class="brand-mark">EB</div>
+    <div class="brand-text">Exec Dashboard</div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a *ngFor="let item of menu" [routerLink]="item.route" routerLinkActive="active" class="sidebar-item">
+      <i [class]="item.icon"></i>
+      <span>{{ item.label }}</span>
+    </a>
+  </nav>
+</aside>

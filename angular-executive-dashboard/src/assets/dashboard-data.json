@@ -1,0 +1,108 @@
+{
+  "kpis": {
+    "revenue": 2487500,
+    "profit": 684200,
+    "orders": 1542,
+    "customers": 987
+  },
+
+  "monthlySales": [
+    { "month": "Jan", "sales": 180000 },
+    { "month": "Feb", "sales": 210000 },
+    { "month": "Mar", "sales": 195000 },
+    { "month": "Apr", "sales": 240000 },
+    { "month": "May", "sales": 290000 },
+    { "month": "Jun", "sales": 310000 },
+    { "month": "Jul", "sales": 340000 },
+    { "month": "Aug", "sales": 375000 },
+    { "month": "Sep", "sales": 410000 },
+    { "month": "Oct", "sales": 450000 },
+    { "month": "Nov", "sales": 490000 },
+    { "month": "Dec", "sales": 520000 }
+  ],
+
+  "categories": [
+    {
+      "category": "Electronics",
+      "value": 42
+    },
+    {
+      "category": "Fashion",
+      "value": 25
+    },
+    {
+      "category": "Home",
+      "value": 18
+    },
+    {
+      "category": "Beauty",
+      "value": 15
+    }
+  ],
+
+  "topProducts": [
+    {
+      "name": "iPhone 15",
+      "sales": 1250,
+      "revenue": 1125000
+    },
+    {
+      "name": "AirPods Pro",
+      "sales": 970,
+      "revenue": 485000
+    },
+    {
+      "name": "Samsung S24",
+      "sales": 860,
+      "revenue": 774000
+    },
+    {
+      "name": "Sony Headphones",
+      "sales": 730,
+      "revenue": 292000
+    },
+    {
+      "name": "Apple Watch",
+      "sales": 610,
+      "revenue": 366000
+    }
+  ],
+
+  "transactions": [
+    {
+      "id": "TX001",
+      "customer": "John Smith",
+      "product": "iPhone 15",
+      "amount": 90000,
+      "status": "Completed"
+    },
+    {
+      "id": "TX002",
+      "customer": "Emma Johnson",
+      "product": "AirPods Pro",
+      "amount": 25000,
+      "status": "Completed"
+    },
+    {
+      "id": "TX003",
+      "customer": "Robert Lee",
+      "product": "Samsung S24",
+      "amount": 75000,
+      "status": "Pending"
+    },
+    {
+      "id": "TX004",
+      "customer": "Sophia Davis",
+      "product": "Apple Watch",
+      "amount": 45000,
+      "status": "Completed"
+    },
+    {
+      "id": "TX005",
+      "customer": "Daniel Brown",
+      "product": "Sony Headphones",
+      "amount": 18000,
+      "status": "Cancelled"
+    }
+  ]
+}

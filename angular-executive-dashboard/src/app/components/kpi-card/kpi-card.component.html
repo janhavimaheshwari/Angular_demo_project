@@ -1,0 +1,17 @@
+<mat-card class="kpi-card" [ngClass]="color">
+  <mat-card-content>
+    <div class="kpi-header">
+      <div class="kpi-icon">
+        <i [class]="icon"></i>
+      </div>
+      <div class="kpi-growth" [ngClass]="{ positive: growthSignal() > 0 }">
+        <i [class]="growthSignal() > 0 ? 'pi pi-arrow-up' : 'pi pi-arrow-down'"></i>
+        <span>{{ growthSignal() | number: '1.1-1' }}%</span>
+      </div>
+    </div>
+    <div class="kpi-content">
+      <h3>{{ title }}</h3>
+      <p class="kpi-value">{{ formattedValue() }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

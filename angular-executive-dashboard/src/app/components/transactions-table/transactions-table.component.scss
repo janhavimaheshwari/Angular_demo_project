@@ -1,0 +1,44 @@
+:host {
+  display: block;
+}
+
+.table-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.table-container h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #475569;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+  text-align: left;
+}
+
+.transactions-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.transactions-table tr:hover {
+  background: #f1f5f9;
+}
